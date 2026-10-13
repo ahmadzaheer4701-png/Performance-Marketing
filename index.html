@@ -4,109 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopify Growth & Meta Ads Specialist</title>
-    <!-- Stable Tailwind CSS CDN -->
-    <script src="https://tailwindcss.com"></script>
     <style>
-        .glass {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #0B0F19; color: #F3F4F6; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; padding: 0 20px; }
+        .container { max-w: 1000px; margin: 0 auto; padding: 60px 0; text-center: center; }
+        .badge { background: rgba(59, 130, 246, 0.1); color: #60A5FA; font-size: 14px; font-weight: 600; padding: 6px 16px; rounded-radius: 50px; border: 1px solid rgba(59, 130, 246, 0.2); display: inline-block; margin-bottom: 20px; border-radius: 20px; }
+        h1 { font-size: 48px; font-weight: 800; tracking: -0.05em; color: #FFFFFF; line-height: 1.2; max-width: 800px; margin: 0 auto 20px auto; }
+        h1 span { color: #34D399; }
+        p.subtitle { color: #9CA3AF; font-size: 18px; max-width: 650px; margin: 0 auto 40px auto; }
+        .btn { display: inline-block; background-color: #10B981; color: #0B0F19; font-weight: bold; font-size: 18px; padding: 16px 32px; border-radius: 12px; text-decoration: none; box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3); transition: 0.2s; }
+        .btn:hover { background-color: #34D399; }
+        .grid { display: grid; grid-template-columns: 1fr; gap: 30px; margin: 60px 0; text-align: left; }
+        @media (min-width: 768px) { .grid { grid-template-columns: 1fr 1fr; } }
+        .card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); padding: 30px; border-radius: 16px; backdrop-filter: blur(12px); }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .card-tag { font-size: 12px; font-weight: bold; uppercase; text-transform: uppercase; color: #60A5FA; }
+        .card-tag.green { color: #34D399; }
+        .metric { font-size: 28px; font-weight: 900; color: #34D399; }
+        .metric.blue { color: #60A5FA; }
+        .card h3 { font-size: 20px; color: #FFFFFF; margin-bottom: 10px; }
+        .card p { color: #9CA3AF; font-size: 14px; }
+        .services-strip { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 24px; padding: 40px; display: grid; grid-template-columns: 1fr; gap: 30px; margin: 40px 0; text-align: left; }
+        @media (min-width: 768px) { .services-strip { grid-template-columns: 1fr 1fr 1fr; } }
+        .service-item h4 { color: #FFFFFF; font-size: 18px; margin-bottom: 5px; }
+        .service-item p { color: #9CA3AF; font-size: 13px; }
+        .widget-box { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 40px; min-height: 200px; display: flex; align-items: center; justify-content: center; margin-top: 30px; }
+        footer { font-size: 12px; color: #4B5563; margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
     </style>
 </head>
-<body class="bg-[#0B0F19] text-gray-100 font-sans antialiased">
+<body>
 
-    <!-- HERO SECTION -->
-    <header class="max-w-5xl mx-auto px-6 pt-24 pb-16 text-center">
-        <span class="bg-indigo-500/10 text-indigo-400 text-sm font-semibold px-4 py-1.5 rounded-full border border-indigo-500/20">
-            🚀 Shopify & D2C Revenue Scaling
-        </span>
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mt-6 max-w-3xl mx-auto leading-tight">
-            We Help Shopify Stores Scale Sales & <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Explode ROAS</span>
-        </h1>
-        <p class="text-gray-400 text-lg md:text-xl mt-6 max-w-2xl mx-auto">
-            Stop losing money on leaky funnels and cold ad sets. We design high-converting stores, custom landing pages, and hyper-targeted Meta Ad funnels built for bottom-line profit.
-        </p>
-        <div class="mt-10">
-            <a href="#audit-form" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-[#0B0F19] font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-emerald-500/20 transition duration-300 transform hover:-translate-y-0.5">
-                Claim Your Free 15-Min Ad Audit 🚀
-            </a>
-        </div>
-    </header>
+    <div class="container">
+        <!-- HERO SECTION -->
+        <span class="badge">🚀 Shopify & D2C Revenue Scaling</span>
+        <h1>We Help Shopify Stores Scale Sales & <span>Explode ROAS</span></h1>
+        <p class="subtitle">Stop losing money on leaky funnels and cold ad sets. We design high-converting stores, custom landing pages, and hyper-targeted Meta Ad funnels built for bottom-line profit.</p>
+        <a href="#audit" class="btn">Claim Your Free 15-Min Ad Audit 🚀</a>
 
-    <!-- PROVEN RESULTS (CASE STUDIES) -->
-    <section class="max-w-5xl mx-auto px-6 py-16">
-        <div class="text-center mb-12">
-            <h2 class="text-2xl md:text-3xl font-bold">Proven Performance Metrics</h2>
-            <p class="text-gray-400 mt-2">Real numbers delivered for scaling e-commerce brands.</p>
-        </div>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-            <!-- Apparel Case Study -->
-            <div class="glass p-8 rounded-2xl transition duration-300 hover:border-emerald-500/30">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Apparel & Fashion</span>
-                    <span class="text-3xl font-black text-emerald-400">4.3x ROAS</span>
+        <!-- CASE STUDIES -->
+        <div class="grid">
+            <div class="card" style="border-color: rgba(52, 211, 153, 0.2);">
+                <div class="card-header">
+                    <span class="card-tag green">Apparel & Fashion</span>
+                    <span class="metric">4.3x ROAS</span>
                 </div>
-                <h3 class="text-xl font-bold mt-4">Scaling Cold Traffic From Scratch</h3>
-                <p class="text-gray-400 mt-2 text-sm leading-relaxed">
-                    Built a robust Meta Ads framework combined with optimized creative hooks. Slashed Return to Origin (RTO) by <span class="text-white font-semibold">42%</span>, directly elevating net margins.
-                </p>
+                <h3>Scaling Cold Traffic From Scratch</h3>
+                <p>Built a robust Meta Ads framework combined with optimized creative hooks. Slashed Return to Origin (RTO) by <strong style="color: #fff;">42%</strong>, directly elevating net margins.</p>
             </div>
 
-            <!-- Jewelry Case Study -->
-            <div class="glass p-8 rounded-2xl transition duration-300 hover:border-indigo-500/30">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">Jewelry & D2C</span>
-                    <span class="text-3xl font-black text-indigo-400">Stable Scale</span>
+            <div class="card" style="border-color: rgba(96, 165, 250, 0.2);">
+                <div class="card-header">
+                    <span class="card-tag">Jewelry & D2C</span>
+                    <span class="metric blue">Stable Scale</span>
                 </div>
-                <h3 class="text-xl font-bold mt-4">Full-Funnel CRO & Account Rescue</h3>
-                <p class="text-gray-400 mt-2 text-sm leading-relaxed">
-                    Re-engineered checkout funnels and introduced high-intent audience segmentation to stabilize tanking ad accounts into predictable, highly profitable revenue streams.
-                </p>
+                <h3>Full-Funnel CRO & Account Rescue</h3>
+                <p>Re-engineered checkout funnels and introduced high-intent audience segmentation to stabilize tanking ad accounts into predictable, highly profitable revenue streams.</p>
             </div>
         </div>
-    </section>
 
-    <!-- CORE ECOSYSTEM SERVICES -->
-    <section class="max-w-5xl mx-auto px-6 py-16">
-        <div class="glass p-8 md:p-12 rounded-3xl grid md:grid-cols-3 gap-8">
-            <div>
-                <div class="text-emerald-400 text-2xl mb-3">🎯</div>
-                <h4 class="font-bold text-lg">Meta Ads Management</h4>
-                <p class="text-gray-400 text-sm mt-1">Full-funnel Facebook & Instagram campaigns mapped to business scale goals.</p>
+        <!-- SERVICES -->
+        <div class="services-strip">
+            <div class="service-item">
+                <div style="font-size: 24px; margin-bottom: 10px;">🎯</div>
+                <h4>Meta Ads Management</h4>
+                <p>Full-funnel Facebook & Instagram campaigns mapped to business scale goals.</p>
             </div>
-            <div>
-                <div class="text-indigo-400 text-2xl mb-3">🛠️</div>
-                <h4 class="font-bold text-lg">Shopify & Landing Pages</h4>
-                <p class="text-gray-400 text-sm mt-1">Building blazing fast, persuasive store designs that minimize drop-offs.</p>
+            <div class="service-item">
+                <div style="font-size: 24px; margin-bottom: 10px;">🛠️</div>
+                <h4>Shopify & Landing Pages</h4>
+                <p>Building blazing fast, persuasive store designs that minimize drop-offs.</p>
             </div>
-            <div>
-                <div class="text-teal-400 text-2xl mb-3">📊</div>
-                <h4 class="font-bold text-lg">Conversion Audits (CRO)</h4>
-                <p class="text-gray-400 text-sm mt-1">Behavior analysis to stop cart abandonment and lower your overall CAC.</p>
+            <div class="service-item">
+                <div style="font-size: 24px; margin-bottom: 10px;">📊</div>
+                <h4>Conversion Audits (CRO)</h4>
+                <p>Behavior analysis to stop cart abandonment and lower your overall CAC.</p>
             </div>
         </div>
-    </section>
 
-    <!-- DYNAMIC LEAD CAPTURE -->
-    <section id="audit-form" class="max-w-3xl mx-auto px-6 py-16 text-center">
-        <h2 class="text-3xl font-bold mb-4">Let's Stop Guessing. Let's Start Scaling.</h2>
-        <p class="text-gray-400 mb-8 max-w-xl mx-auto">
-            Book a 100% free, no-obligation strategy audit where we review your store funnel and ad infrastructure live.
-        </p>
-        
-        <div class="glass p-4 rounded-2xl min-h-[450px] flex items-center justify-center">
-            <p class="text-gray-500 text-sm">
-                [ Paste your Calendly Inline Embed or Google Form Inline Frame Script Here ]
-            </p>
+        <!-- LEAD CAPTURE -->
+        <div id="audit" style="margin-top: 60px;">
+            <h2 style="font-size: 28px; color: #FFF; margin-bottom: 10px;">Let's Stop Guessing. Let's Start Scaling.</h2>
+            <p style="color: #9CA3AF; font-size: 14px;">Book a 100% free, no-obligation strategy audit where we review your store funnel and ad infrastructure live.</p>
+            <div class="widget-box">
+                <p style="color: #4B5563; font-size: 13px;">[ Paste your Calendly Inline Embed or Google Form Inline Frame Script Here ]</p>
+            </div>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="text-center py-8 text-xs text-gray-600 border-t border-white/5 max-w-5xl mx-auto">
-        &copy; 2026 E-commerce Performance Architecture. Built via GitHub Pages.
-    </footer>
+        <footer>
+            &copy; 2026 E-commerce Performance Architecture. Built via GitHub Pages.
+        </footer>
+    </div>
 
 </body>
 </html>
